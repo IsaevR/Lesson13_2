@@ -24,8 +24,8 @@ namespace Lesson_13
             jsonfile.Add(parser.Parse(str));
             
             
-            string s = JsonConvert.SerializeObject(jsonfile);
-            File.AppendAllText(@"c:/tmp/text2.txt", s);
+            string s = JsonConvert.SerializeObject(jsonfile); // сериализация 
+            File.AppendAllText(@"c:/tmp/text2.txt", s); // записываем данные в файл
            
             
             Console.ReadLine();
